@@ -2,6 +2,7 @@
   <div id="mainComponent">
     <!-- <nav></nav> -->
     <div class="main">
+      <div class="scroll-down"></div>
       <div class="left-col">
         <p class="name">Andrew Inhwan Kim</p>
 
@@ -28,7 +29,7 @@
           <font-awesome-icon :icon="['far', 'file-pdf']" size="2x" class="far" color="white"/>
         </div>
       </div>
-      <div class="right-col profile">
+      <div class="right-col profile" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
         <!-- <img src="../assets/profile.jpg" alt="Profile Photo" class="profile-photo">      -->
         <!-- <h1>Welcome to my portfolio</h1> -->
       </div>
@@ -44,6 +45,7 @@
 import { page } from "vue-analytics";
 import { VueTyper } from "vue-typer";
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
+// import VanillaTilt from "vanilla-tilt";
 
 export default {
   name: "MainSection",
@@ -271,6 +273,33 @@ canvas {
     top: -60px;
     left: 0px;
     transform: unset;
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 210px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 12px solid #fff;
+  border-right: 12px solid #fff;
+  border-radius: 5px;
+  left: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+  animation: fade_move_down 4s ease-in-out infinite;
+}
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
   }
 }
 </style>

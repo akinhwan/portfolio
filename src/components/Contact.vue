@@ -24,7 +24,7 @@
           />
           <p>
             <span class="sayhello">Say Hello</span>
-            <a class="phonenumber" href="tel:+1-703-851-5514">+1 (703) 851-5514</a>
+            <a class="phonenumber" href="tel:+1-202-507-9205">+1 (202) 507-9205</a>
           </p>
         </div>
       </div>
@@ -47,7 +47,7 @@
             color="white"
             size="1x"
             class="fas"
-          />With an assist from ...
+          /> With an assist from ...
         </p>
 
         <ul class="credits-list">
@@ -93,6 +93,13 @@
               target="_blank"
               rel="noopener noreferrer"
             >vueTyper</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/mciastek/sal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Sal.js</a>
           </li>
         </ul>
       </div>
