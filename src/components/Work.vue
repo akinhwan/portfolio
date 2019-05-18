@@ -278,7 +278,7 @@ a {
 
 .slack {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/slack_screenshot.png");
+    url("/static/img/slack_screenshot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -286,42 +286,42 @@ a {
 
 .rides {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/rideshare_screenshot.png");
+    url("/static/img/rideshare_screenshot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .spaces {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/spaces_screenshot.png");
+    url("/static/img/spaces_screenshot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .pubmed {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
-    url("../assets/pub_med_labs.jpeg");
+    url("/static/img/pub_med_labs.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .kas {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
-    url("../assets/kas.jpg");
+    url("/static/img/kas.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .odpcec {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
-    url("../assets/odpcec.png");
+    url("/static/img/odpcec.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 /* .telliscope {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/landing.png");
+    url("/static/img/landing.png");
   background-size: 630px; 
   background-size: cover;
   background-position: center;
@@ -329,21 +329,21 @@ a {
 } */
 .graphicdesign {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/pattern.gif");
+    url("/static/img/pattern.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .threed {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/chess_set.gif");
+    url("/static/img/chess_set.gif");
   background-size: 530px;
   background-position: center;
   background-repeat: no-repeat;
 }
 .processing {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/3d_line.gif");
+    url("/static/img/3d_line.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -353,35 +353,35 @@ a {
 }
 /* .queue {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/queue.png");
+    url("/static/img/queue.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 } */
 .transit {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/transit.png");
+    url("/static/img/transit.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 /* .directory {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/directory.png");
+    url("/static/img/directory.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 } */
 /* .inout {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/inout.png");
+    url("/static/img/inout.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 } */
 .loginpage {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../assets/loginpage.png");
+    url("/static/img/loginpage.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

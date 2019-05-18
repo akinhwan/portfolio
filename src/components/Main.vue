@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="right-col profile" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-        <!-- <img src="../assets/profile.jpg" alt="Profile Photo" class="profile-photo">      -->
+        <!-- <img src="/static/img/profile.jpg" alt="Profile Photo" class="profile-photo">      -->
         <!-- <h1>Welcome to my portfolio</h1> -->
       </div>
     </div>
@@ -199,7 +199,7 @@ canvas {
   /* bottom: 95px; */
 }
 .wave {
-  background: url("../assets/curve.svg") repeat-x;
+  background: url("/static/img/curve.svg") repeat-x;
   width: 210vw;
   height: 7vh;
   /* bottom: 131.5px; */
