@@ -116,7 +116,7 @@ export default {
   border-radius: 50%;
   height: 17vw;
   width: 17vw;
-  background-image: url("./static/img/profile2.jpg");
+  background-image: url("../assets/profile2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 10%;
