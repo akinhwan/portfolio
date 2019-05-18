@@ -22,7 +22,7 @@
         <div class="resume">
           <a
             id="aikresume"
-            href="./static/img/resume_december_2018.pdf"
+            href="http://bit.ly/30sK4KZ"
             target="_blank"
             rel="noopener noreferrer"
           >View my Resume</a>
