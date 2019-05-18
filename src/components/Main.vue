@@ -278,7 +278,7 @@ canvas {
 
 .scroll-down {
   position: absolute;
-  bottom: 210px;
+  bottom: 160px;
   font-size: 20px;
   width: 30px;
   height: 30px;

@@ -7,8 +7,6 @@ const sourceMapEnabled = isProduction
   : config.dev.cssSourceMap
 
 module.exports = {
-  publicPath: "/akin",
-  outputDir: "docs",
   loaders: utils.cssLoaders({
     sourceMap: sourceMapEnabled,
     extract: isProduction
