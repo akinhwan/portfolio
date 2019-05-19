@@ -40,7 +40,7 @@
         <!-- <p>A:Blue</p> -->
       </div>
 
-      <div class="credits">
+      <!-- <div class="credits">
         <p>This site was built by me
           <font-awesome-icon
             :icon="['fas', 'hand-holding-heart']"
@@ -102,7 +102,7 @@
             >Sal.js</a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <div class="footer">
         <a href="https://github.com/akinhwan" target="_blank" rel="noopener noreferrer">
@@ -175,7 +175,7 @@
     </div>
     <div class="copyright">
       <font-awesome-icon :icon="['far', 'copyright']" size="1x" class="fai"/>
-      <p class="copyright-text">2018 Andrew Inhwan Kim. All rights reserved.</p>
+      <p class="copyright-text">2019 Andrew Inhwan Kim. All rights reserved.</p>
     </div>
   </div>
 </template>
