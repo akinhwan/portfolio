@@ -2,19 +2,19 @@
   <div id="work">
     <div class="work">
         <h1 class="header">Work</h1>
-        <div class="pubmed card">
+        <div class="pubmed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2qdmSQ9" target="_blank" rel="noopener noreferrer">PubMed</a>
           <p class="caption">Search Engine for Biomedical Literature</p>
           <div class="year-made">'18</div>
         </div>
 
-        <div class="odpcec card">
+        <div class="odpcec card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2qfy12Q" target="_blank" rel="noopener noreferrer">ODPC</a>
           <p class="caption">Open Door Presbyterian English Congregation</p>
           <div class="year-made">'18</div>
         </div>
         
-        <div class="kas card">
+        <div class="kas card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2RhS10j" target="_blank" rel="noopener noreferrer">KAS</a>
           <p class="caption">Korean American Story Organization</p>
           <div class="year-made">'18</div>
@@ -38,7 +38,7 @@
           <!-- <div class="year-made">'17</div> -->
         <!-- </div> -->
 
-        <div class="rides card">
+        <div class="rides card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">Rides</a>
           <!-- <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
           <a @click="trying3 = !trying3" target="_blank" rel="noopener noreferrer">Rides</a>
@@ -54,27 +54,27 @@
           <p class="caption">UX freelance contracts with Telliscope LLC</p>
           <div class="year-made">'16</div>
         </div> -->
-        <div class="graphicdesign card">
+        <div class="graphicdesign card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2IW4Ysq" target="_blank" rel="noopener noreferrer">Design</a>
           <!-- <p class="caption">Typefaces, patterns, logos made between 11'-14'</p> -->
           <div class="year-made">'11-'12</div>
         </div>
-        <div class="threed card">
+        <div class="threed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2HBdeyK" target="_blank" rel="noopener noreferrer">3D</a>
           <!-- <p class="caption">3D Printed Chess pieces, Processing Sketches, and Data Viz</p> -->
           <div class="year-made">'16</div>
         </div>
-        <div class="processing card">
+        <div class="processing card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2HrWXyu" target="_blank" rel="noopener noreferrer">Processing</a>
           <!-- <p class="caption"></p> -->
           <div class="year-made">'14-'15</div>
         </div>
-        <div class="loginpage card">
+        <div class="loginpage card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2JM0hTq" target="_blank" rel="noopener noreferrer">Xhibit</a>
           <!-- <p class="caption"></p> -->
           <div class="year-made">'17</div>
         </div>
-        <div class="transit card">
+        <div class="transit card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2vh6pjf" target="_blank" rel="noopener noreferrer">Transit</a>
           <!-- <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
           <a @click="trying5=!trying5" target="_blank" rel="noopener noreferrer">Transit</a>
@@ -274,6 +274,7 @@ a {
 .card {
   border-radius: 15px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transform-style: preserve-3d;
 }
 
 /* .slack {
@@ -304,6 +305,10 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.card > a{
+  transform: translateZ(20px)
 }
 .kas {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),

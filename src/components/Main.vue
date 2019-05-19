@@ -29,7 +29,8 @@
           <font-awesome-icon :icon="['far', 'file-pdf']" size="2x" class="far" color="white"/>
         </div>
       </div>
-      <div class="right-col profile" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+      <!-- <div class="right-col profile" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500"> -->
+      <div class="right-col profile" v-tilt="{max: 50, speed: 500, perspective: 1000}">
         <!-- <img src="/static/img/profile.jpg" alt="Profile Photo" class="profile-photo">      -->
         <!-- <h1>Welcome to my portfolio</h1> -->
       </div>
@@ -45,7 +46,6 @@
 import { page } from "vue-analytics";
 import { VueTyper } from "vue-typer";
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
-import VanillaTilt from "vanilla-tilt";
 
 export default {
   name: "MainSection",

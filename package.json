@@ -18,11 +18,13 @@
     "animate.css": "^3.6.1",
     "fullpage.js": "^2.9.7",
     "sal.js": "^0.5.0",
+    "tilt.js": "^1.2.1",
     "vanilla-tilt": "^1.7.0",
-    "vue": "^2.5.16",
+    "vue": "^2.6.10",
     "vue-analytics": "^5.16.0",
     "vue-fullpage": "^2.0.5",
     "vue-fullpage.js": "0.0.1",
+    "vue-tilt.js": "^1.0.2",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
@@ -57,7 +59,7 @@
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.5.16",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^3.11.0",
     "webpack-bundle-analyzer": "^2.11.1",
     "webpack-dev-server": "^2.11.2",

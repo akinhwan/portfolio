@@ -7,7 +7,7 @@ import regular from "@fortawesome/fontawesome-free-regular";
 import solid from "@fortawesome/fontawesome-free-solid";
 // import VueFullPage from 'vue-fullpage'
 // import 'vue-fullpage/vue-fullpage.css'
-
+import VueTilt from 'vue-tilt.js'
 //sometimes commenting this solves, other breaks it
 // Vue.use(VueFullPage);
 Vue.use(VueAnalytics, {
@@ -16,6 +16,8 @@ Vue.use(VueAnalytics, {
   //   enabled: true
   // }
 });
+
+Vue.use(VueTilt);
 
 fontawesome.config.familyPrefix;
 Vue.config.productionTip = false;

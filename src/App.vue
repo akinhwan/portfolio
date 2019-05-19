@@ -30,8 +30,8 @@ export default {
         navigationPosition: "right",
         navigationTooltips: ["main", "about", "work", "contact"],
         showActiveTooltip: true,
-        anchors: ["1", "2", "3", "4"],
-        normalScrollElements: "#work"
+        anchors: ["1", "2", "3", "4"]
+        // normalScrollElements: "#work"
       }
     };
   },
