@@ -1,4 +1,4 @@
-# https://akinhwan.github.io/
+# https://www.akinhwan.site  or just **akinhwan.site**
 
 :tada: Welcome to my personal site's repo. Please report any bugs/issues :bug:! Pull requests are very welcome~ :hearts:
 
