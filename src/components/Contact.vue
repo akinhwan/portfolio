@@ -249,6 +249,7 @@ export default {
   align-items: center;
   justify-content: space-around;
   /* padding: 4.2vw 0; */
+  margin: 5vh 0;
 }
 .information > h1 {
   color: white;
@@ -311,7 +312,7 @@ export default {
   color: white;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+  /* grid-template-rows: repeat(auto-fill, minmax(80px, 1fr)); */
 }
 
 h2 {

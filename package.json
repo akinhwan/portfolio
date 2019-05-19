@@ -18,7 +18,7 @@
     "animate.css": "^3.6.1",
     "fullpage.js": "^2.9.7",
     "sal.js": "^0.5.0",
-    "vanilla-tilt": "^1.6.1",
+    "vanilla-tilt": "^1.7.0",
     "vue": "^2.5.16",
     "vue-analytics": "^5.16.0",
     "vue-fullpage": "^2.0.5",

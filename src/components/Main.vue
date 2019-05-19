@@ -45,7 +45,7 @@
 import { page } from "vue-analytics";
 import { VueTyper } from "vue-typer";
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
-// import VanillaTilt from "vanilla-tilt";
+import VanillaTilt from "vanilla-tilt";
 
 export default {
   name: "MainSection",

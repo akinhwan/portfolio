@@ -29,14 +29,14 @@
           <div class="year-made">'18</div>
         </div> -->
 
-        <div class="slack card">
-          <a href="http://bit.ly/2HzxsZv" target="_blank" rel="noopener noreferrer">Slack</a>
+        <!-- <div class="slack card"> -->
+          <!-- <a href="http://bit.ly/2HzxsZv" target="_blank" rel="noopener noreferrer">Slack</a> -->
           <!-- <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
           <a @click="trying2 = !trying2" target="_blank" rel="noopener noreferrer">Slack</a>
           <input autofocus v-show="trying2" type="text" id="workpass2" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2HzxsZv', 2);">
           <p class="caption">real-time messaging for workplace collaboration internal communication, adapted for signage </p> -->
-          <div class="year-made">'17</div>
-        </div>
+          <!-- <div class="year-made">'17</div> -->
+        <!-- </div> -->
 
         <div class="rides card">
           <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">Rides</a>
@@ -276,13 +276,13 @@ a {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.slack {
+/* .slack {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("/static/img/slack_screenshot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .rides {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
