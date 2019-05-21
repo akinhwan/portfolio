@@ -245,21 +245,17 @@ a {
 }
 
 .work {
-  /* background: linear-gradient(rgba(40,44,53,1), 90%, rgba(255,255,255,1)); */
-  /* background: rgba(40,44,53,1); */
   height: 70%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(211px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(168px, 1fr));
   /* grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr); */
-  /* margin-bottom: 5vmin; */
   padding: 5vmin;
   grid-gap: 5vmin;
   border-radius: 15px;
   /* overflow: overlay; Behaves the same as auto, but with the scrollbars drawn on top of content instead of taking up space. Only supported in WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome or Opera) browsers.*/
   overflow: hidden;
-  /* margin: 5vmin; */
 }
 
 .work > p {
@@ -402,7 +398,7 @@ a {
 
 @media (max-width: 765px) {
   .work {
-    grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(47px, 1fr));
   }
 }
 </style>

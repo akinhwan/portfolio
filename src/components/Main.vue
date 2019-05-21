@@ -1,12 +1,10 @@
 <template>
   <div id="mainComponent">
-    <!-- <nav></nav> -->
     <div class="main">
       <div class="scroll-down"></div>
       <div class="left-col">
         <p class="name">Andrew Inhwan Kim</p>
 
-        <!-- <p class="jobtitle">Frontend Engineer</p> -->
         <vue-typer
           class="jobtitle"
           :text='["Frontend Engineer", "Web Developer", "UX Designer"]'
@@ -17,8 +15,6 @@
           caret-animation="phase"
         ></vue-typer>
 
-        <!-- <p class="location">Currently based in Northern Virginia</p> -->
-        <!-- <p class="tagline">I have an eye for how it looks, but also the knowledge of why it behaves.</p> -->
         <div class="resume">
           <a
             id="aikresume"
@@ -29,15 +25,8 @@
           <font-awesome-icon :icon="['far', 'file-pdf']" size="2x" class="far" color="white"/>
         </div>
       </div>
-      <!-- <div class="right-col profile" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500"> -->
       <div class="right-col profile" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <!-- <img src="/static/img/profile.jpg" alt="Profile Photo" class="profile-photo">      -->
-        <!-- <h1>Welcome to my portfolio</h1> -->
       </div>
-    </div>
-    <div class="wave-bottom-container">
-      <div class="wave"></div>
-      <div class="wave wave2"></div>
     </div>
   </div>
 </template>
@@ -48,7 +37,7 @@ import { VueTyper } from "vue-typer";
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
 
 export default {
-  name: "MainSection",
+  name: "main",
   data() {
     return {
       msg: "Main Front First Business Card"
@@ -106,7 +95,7 @@ export default {
   height: 70vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(353px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(380px, 1fr));
 }
 
 .profile {
@@ -189,51 +178,6 @@ canvas {
   unicode-range: U + 0400-045f, U + 0490-0491, U + 04b0-04b1, U + 2116;
 }
 
-.wave-bottom-container {
-  z-index: 50;
-  overflow: hidden;
-  width: 100%;
-  height: 30%;
-  position: absolute;
-  /* bottom: 0.7px; */
-  /* bottom: 95px; */
-}
-.wave {
-  background: url("/static/img/curve.svg") repeat-x;
-  width: 210vw;
-  height: 7vh;
-  /* bottom: 131.5px; */
-  position: absolute;
-  /* right: 0px; */
-  animation: wave 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0) scaleY(-1);
-}
-
-.wave2 {
-  /* // top: -175px; */
-  animation: wave 14s cubic-bezier(0.36, 0.45, 0.63, 0.53) -1s infinite;
-  animation-direction: reverse;
-  left: 400px;
-  opacity: 1;
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-@keyframes wave2 {
-  0% {
-    margin-left: -1600px;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
-
 @keyframes swell {
   0%,
   100% {
@@ -265,9 +209,6 @@ canvas {
   }
   .fa-2x {
     font-size: 1em;
-  }
-  .wave {
-    width: 320vw;
   }
   .header {
     top: -60px;

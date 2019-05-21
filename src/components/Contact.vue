@@ -274,10 +274,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.credits {
+/* .credits {
   color: white;
   display: flex;
   flex-direction: column;
@@ -290,15 +290,16 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
-}
+} */
 
-.credits-list > li > a {
+/* .credits-list > li > a {
   color: white;
   font-size: calc(10px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 .credits-fai {
   padding-left: 5px;
-}
+} */
+
 .copyright {
   display: flex;
   align-items: center;

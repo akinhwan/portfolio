@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <full-page :options="options" ref="fullpage">
+    <!-- <router-link to="/main2">Main2</router-link> -->
+    <!-- <router-view /> -->
       <!-- <Nav /> -->
       <Main class="section" data-sal="fade"/>
       <About class="section" data-sal="fade"/>
@@ -50,20 +52,13 @@ export default {
 </script>
 
 <style>
-/* @import "~sal.js/sal.css"; */
 @import "../node_modules/sal.js/dist/sal.css";
-/* C:\Users\akinh\Documents\Projects\portfolio_all_files\node_modules\sal.js\dist\sal.css */
 
 #app {
-  /* margin: 15vh 20vh; */
-  /* margin: 8vw 10vw;
-    left: 5vw; */
-  /* padding: 5vmin; */
   background-color: rgba(0, 0, 0, 0.3);
   height: 70vh;
   width: 70vw;
-  /* padding-left: 5vmin; */
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
   position: fixed;
 }
 
@@ -72,7 +67,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -126,7 +120,7 @@ body::-webkit-scrollbar-thumb {
 }
 #fp-nav ul li .fp-tooltip {
   color: white;
-  font-family: Product Sans; /* font-size: 1.5em; */
+  font-family: Product Sans; 
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {

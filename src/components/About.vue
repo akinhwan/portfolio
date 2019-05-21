@@ -4,10 +4,20 @@
     <div class="about">
         <h1 class="header">About</h1>
         <p class="col-one">
-          I was born in 1991, an only child in Annandale Virginia. I grew up with an obsession with LEGO and claimed I'd become a concert violinist. In middle school I thought I'd end up in the NBA or the PGA. In high school I discovered The Beatles and knew our band "Kung Food" was going to make it 😜. At New York University I began as an Economic Policy major, but transferred midway to <a href="http://tisch.nyu.edu/" target="_blank" rel="noopener noreferrer">Tisch School of the Arts</a> for Film and Television. I'm currently a Full Stack Developer at <a href="https://agencychief.com/" target="_blank" rel="noopener noreferrer">CHIEF</a> (recently acquired by <a href="http://bytecubed.com/" target="_blank" rel="noopener noreferrer">Bytecubed</a>) working on <a href="https://www.ncbi.nlm.nih.gov/labs/pubmed/" target="_blank" rel="noopener noreferrer"Pub Med Labs>Pub Med Labs</a> connecting people to the world's leading sources of biomedical information.
+          I was born in 1991, an only child in Annandale Virginia. I grew up with an obsession with LEGO and claimed I'd 
+          become a concert violinist. In middle school I thought I'd end up in the NBA or the PGA. In high school I discovered 
+          The Beatles and knew our band "Kung Food" was going to make it 😜. At New York University I began as an Economic Policy 
+          major, but transferred midway to <a href="http://tisch.nyu.edu/" target="_blank" rel="noopener noreferrer">Tisch School 
+          of the Arts</a> for Film and Television. I'm currently a Full Stack Developer at 
+          <a href="https://agencychief.com/" target="_blank" rel="noopener noreferrer">CHIEF</a> (recently 
+          acquired by <a href="http://bytecubed.com/" target="_blank" rel="noopener noreferrer">Bytecubed</a>) 
+          working on <a href="https://www.ncbi.nlm.nih.gov/labs/pubmed/" target="_blank" rel="noopener noreferrer"Pub Med Labs>
+          Pub Med Labs</a> connecting people to the world's leading sources of biomedical information.
+          People are often surprised to find out that I don't subscribe to Netflix 😨, but I am a huge fan of
+          <a href="https://medium.com/@akinhwan/my-favorite-podcasts-4b39a3de637c" target="_blank" rel="noopener noreferrer">Podcasts</a>.
         </p>
         <p class="col-two">
-          People are often surprised to find out that I don't subscribe to Netflix 😨, but I am a huge fan of <a href="https://medium.com/@akinhwan/my-favorite-podcasts-4b39a3de637c" target="_blank" rel="noopener noreferrer">Podcasts</a>. I'll probably enjoy golf till old age, my handicap is ~15. I love music, here is some hard hitting jazz for your soul <a href="https://youtu.be/CsxtKQW9ggg" target="_blank" rel="noopener noreferrer">A Love Supreme Part 2, Resolution by John Coltrane </a>, <a href="https://www.youtube.com/watch?v=pDga7tJL2UU" target="_blank" rel="noopener noreferrer">I Love Music by Ahmad Jamal</a>, and <a href="https://www.youtube.com/watch?v=U8pZZ5D3dVc" target="_blank" rel="noopener noreferrer">Yusef Lateef's Love Theme from Spartacus</a>. Also... <a href="https://www.youtube.com/watch?v=WKWFr9upIuU&t=882s" target="_blank" rel="noopener noreferrer">Brazilian Samba?</a>. Otherwise I enjoy listening to <a href="https://worldwidefm.net/" target="_blank" rel="noopener noreferrer">Worldwide FM radio</a> while I work. I grew up eating <a href="https://en.wikipedia.org/wiki/Gamja-tang" target="_blank" rel="noopener noreferrer">Gamja-tang</a>, and will drink most anything in smoothie form. 
+          I'll probably enjoy golf till old age, my handicap is ~12. I love music, here is some hard hitting jazz for your soul <a href="https://youtu.be/CsxtKQW9ggg" target="_blank" rel="noopener noreferrer">A Love Supreme Part 2, Resolution by John Coltrane </a>, <a href="https://www.youtube.com/watch?v=pDga7tJL2UU" target="_blank" rel="noopener noreferrer">I Love Music by Ahmad Jamal</a>, and <a href="https://www.youtube.com/watch?v=U8pZZ5D3dVc" target="_blank" rel="noopener noreferrer">Yusef Lateef's Love Theme from Spartacus</a>. Also... <a href="https://www.youtube.com/watch?v=WKWFr9upIuU&t=882s" target="_blank" rel="noopener noreferrer">Brazilian Samba?</a>. Otherwise I enjoy listening to <a href="https://worldwidefm.net/" target="_blank" rel="noopener noreferrer">Worldwide FM radio</a> while I work. I grew up eating <a href="https://en.wikipedia.org/wiki/Gamja-tang" target="_blank" rel="noopener noreferrer">Gamja-tang</a>, and will drink most anything in smoothie form. 
           My favorite book is <a href="https://en.wikipedia.org/wiki/Meditations" target="_blank" rel="noopener noreferrer">Meditations</a> by <a href="https://en.wikipedia.org/wiki/Marcus_Aurelius" target="_blank" rel="noopener noreferrer">Marcus Aurelius</a>. A movie I could watch over and over again is <a href="https://www.youtube.com/watch?v=BnFjSHQFVkA" target="_blank" rel="noopener noreferrer">In the Mood for Love</a> by <a href="https://en.wikipedia.org/wiki/Wong_Kar-wai_filmography" target="_blank" rel="noopener noreferrer">Wong Kar-wai</a>. 
           My <a href="https://www.effectivealtruism.org/" target="_blank" rel="noopener noreferrer">mission</a> in life is to make the biggest impact on the most amount of people on this planet 🌎 
         </p>
@@ -61,24 +71,20 @@ export default {
     0 22px 30px rgba(0, 0, 0, 0.9);
 }
 .about {
-  /* background: linear-gradient(rgba(40,44,53,1), 90%, rgba(255,255,255,1)); */
   height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  /* margin-bottom: 5vmin; */
   padding: 5vmin;
   grid-gap: 5vmin;
   border-radius: 15px;
   overflow: hidden;
-  /* margin: 5vmin; */
 }
 
 .about > p {
   color: white;
   font-size: 2vmin;
   font-weight: 300;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: "Product Sans", sans-serif;
   line-height: 5vmin;
   text-align: justify;

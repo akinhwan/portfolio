@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App";
+// import router from './router';
 import VueAnalytics from "vue-analytics";
 import fontawesome from "@fortawesome/fontawesome";
 import brands from "@fortawesome/fontawesome-free-brands/index.es.js";
@@ -16,7 +17,7 @@ Vue.use(VueAnalytics, {
   //   enabled: true
   // }
 });
-
+// Vue.use(VueRouter);
 Vue.use(VueTilt);
 
 fontawesome.config.familyPrefix;
@@ -26,3 +27,8 @@ new Vue({
   el: "#app",
   render: h => h(App)
 });
+
+// new Vue({
+//   router,
+//   render: function (h) { return h(App) }
+// }).$mount('#app')
