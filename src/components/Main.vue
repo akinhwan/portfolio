@@ -18,7 +18,7 @@
         <div class="resume">
           <a
             id="aikresume"
-            href="http://bit.ly/30sK4KZ"
+            href="http://bit.ly/2YssENj"
             target="_blank"
             rel="noopener noreferrer"
           >View my Resume</a>
