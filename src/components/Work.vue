@@ -2,23 +2,30 @@
   <div id="work">
     <div class="work">
         <h1 class="header">Work</h1>
+
         <div class="pubmed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2qdmSQ9" target="_blank" rel="noopener noreferrer">PubMed</a>
           <p class="caption">Search Engine for Biomedical Literature</p>
           <div class="year-made">'18</div>
         </div>
 
-        <div class="odpcec card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <div class="pitchgen card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+          <a href="http://bit.ly/2RQIJda" target="_blank" rel="noopener noreferrer">PitchGen</a>
+          <p class="caption">Neural Network text generation of Startup Ideas</p>
+          <div class="year-made">'19</div>
+        </div>
+
+        <!-- <div class="odpcec card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2qfy12Q" target="_blank" rel="noopener noreferrer">ODPC</a>
           <p class="caption">Open Door Presbyterian English Congregation</p>
           <div class="year-made">'18</div>
-        </div>
+        </div> -->
         
-        <div class="kas card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <!-- <div class="kas card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
           <a href="http://bit.ly/2RhS10j" target="_blank" rel="noopener noreferrer">KAS</a>
           <p class="caption">Korean American Story Organization</p>
           <div class="year-made">'18</div>
-        </div>
+        </div> -->
         
         <!-- <div class="spaces card">
           <a href="http://bit.ly/2H4NYE8" target="_blank" rel="noopener noreferrer">Spaces</a>
@@ -42,8 +49,8 @@
           <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">Rides</a>
           <!-- <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
           <a @click="trying3 = !trying3" target="_blank" rel="noopener noreferrer">Rides</a>
-          <input autofocus v-show="trying3" type="text" id="workpass3" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2HBd8XU', 3);"> -->
-          <!-- <p class="caption">tabular display of ETA, pricing, and vehicle types</p> -->
+          <input autofocus v-show="trying3" type="text" id="workpass3" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2HBd8XU', 3);">
+          <p class="caption">tabular display of ETA, pricing, and vehicle types</p> -->
           <div class="year-made">'17</div>
         </div>
 
@@ -297,7 +304,15 @@ a {
 }
 .pubmed {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
-    url("/static/img/pub_med_labs.jpeg");
+    url("/static/img/pubmed.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pitchgen {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
+    url("/static/img/pitchgen.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,7 +352,7 @@ a {
 }
 .threed {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/img/chess_set.gif");
+    url("/static/img/pointyhedra.gif");
   background-size: 530px;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,13 +1,10 @@
 <template>
   <div id="contact">
     <h1 class="header">Contact</h1>
-    <!-- <nav></nav> -->
     <!-- <div class="recommendations">
-
     </div>-->
     <div class="grid">
       <div class="information">
-        <!-- <h1>Say Hello!</h1> -->
         <div class="my-email">
           <font-awesome-icon :icon="['far', 'envelope-open']" size="1x" class="information-fai"/>
           <p class="dropaline">Drop a line</p>
@@ -150,25 +147,10 @@
                 <p><input type="email" placeholder="heyHEYhey@gmail.com" name="email" id="tlemail" required  /></p>
                 <input type="hidden" value="1" name="embed"/>
                 <input type="submit" id="tlbutton" value="Subscribe" />
-          </form>-->
-          <form
-            style="padding:3px;text-align:center;"
-            class="gform"
-            method="POST"
-            data-email="example@email.net"
-            action="https://script.google.com/macros/s/AKfycbxUCjy5zIYpfOt7Iv4E1EwxZ_fU6L6JAAm03pOW/exec"
-          >
-            <p>
-              <input
-                type="email"
-                placeholder="heyHEYhey@gmail.com"
-                name="email"
-                id="tlemail"
-                required
-              >
-            </p>
-            <input type="hidden" value="1" name="embed">
-            <input type="submit" id="tlbutton" value="Subscribe">
+          </form> -->
+          <form action="https://getform.io/f/9d0bba9d-b70b-41e8-a83a-b2d97b8fcc63" method="POST">
+            <input type="email" placeholder="heyHEYhey@gmail.com" name="email" id="tlemail" required>
+            <button type="submit" id="tlbutton" value="Subscribe">Send</button> 
           </form>
         </div>
       </div>
@@ -181,7 +163,6 @@
 </template>
 
 <script>
-// import Footer from './Footer'
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
 
 export default {
@@ -229,8 +210,6 @@ export default {
 }
 
 .phonenumber {
-  /* text-shadow: 2px 2px 5px white, 1px 1px 20px white; */
-  /* text-decoration-line: underline; */
   text-decoration-style: wavy;
   color: white;
   font-weight: bolder;
@@ -244,11 +223,9 @@ export default {
 }
 
 .information {
-  /* display: flex; */
   display: grid;
   align-items: center;
   justify-content: space-around;
-  /* padding: 4.2vw 0; */
   margin: 5vh 0;
 }
 .information > h1 {
@@ -350,7 +327,6 @@ form > p {
   font-family: "Space Mono", monospace;
   height: 38%;
   padding-top: 7px;
-  /* width: 50px; */
   width: 15vw;
 }
 
