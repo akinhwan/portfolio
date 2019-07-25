@@ -3,12 +3,10 @@
     <full-page :options="options" ref="fullpage">
     <!-- <router-link to="/main2">Main2</router-link> -->
     <!-- <router-view /> -->
-      <!-- <Nav /> -->
       <Main class="section" data-sal="fade"/>
-      <About class="section" data-sal="fade"/>
       <Work class="section" data-sal="fade"/>
+      <About class="section" data-sal="fade"/>
       <Contact class="section" data-sal="fade"/>
-      <!-- <Footer /> -->
     </full-page>
   </div>
 </template>
@@ -30,7 +28,7 @@ export default {
       options: {
         navigation: true,
         navigationPosition: "right",
-        navigationTooltips: ["main", "about", "work", "contact"],
+        navigationTooltips: ["main", "work", "about", "contact"],
         showActiveTooltip: true,
         anchors: ["1", "2", "3", "4"]
         // normalScrollElements: "#work"

@@ -157,7 +157,7 @@
     </div>
     <div class="copyright">
       <font-awesome-icon :icon="['far', 'copyright']" size="1x" class="fai"/>
-      <p class="copyright-text">2019 Andrew Inhwan Kim. All rights reserved.</p>
+      <p class="copyright-text">2019 Akinhwan. All rights reserved.</p>
     </div>
   </div>
 </template>

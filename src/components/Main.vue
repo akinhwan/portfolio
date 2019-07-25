@@ -1,9 +1,9 @@
 <template>
   <div id="mainComponent">
     <div class="main">
-      <div class="scroll-down"></div>
+      <!-- <div class="scroll-down"></div> -->
       <div class="left-col">
-        <p class="name">Andrew Inhwan Kim</p>
+        <p class="name">Andrew Kim</p>
 
         <vue-typer
           class="jobtitle"
@@ -217,7 +217,7 @@ canvas {
   }
 }
 
-.scroll-down {
+/* .scroll-down {
   position: absolute;
   bottom: 160px;
   font-size: 20px;
@@ -242,5 +242,5 @@ canvas {
     transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
   }
-}
+} */
 </style>

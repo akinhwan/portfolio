@@ -1,16 +1,11 @@
 <template>
   <div id="nav">
-    <!-- <nav></nav> -->
-
-    <div class="nav">
-       
+    <div class="nav">    
             <p>Main</p>
-            <p>About</p>
             <p>Work</p>
-            <p>Contact</p>
-                
+            <p>About</p>
+            <p>Contact</p>                
     </div>
-
   </div>
 </template>
 
