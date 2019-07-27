@@ -60,6 +60,13 @@ export default {
   position: fixed;
 }
 
+@media screen and (max-width: 400px) {
+  #app {
+    height: 80vh;
+    width: 80vw;
+  }
+}
+
 body {
   margin: 0;
   display: flex;

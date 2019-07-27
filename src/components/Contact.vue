@@ -401,7 +401,7 @@ fai:focus {
   }
   .subscription {
     grid-template-rows: repeat(auto-fill, minmax(82px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(36vw, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(41vw, 1fr));
   }
   .subscription > h2 {
     font-size: 4vw;
