@@ -1,12 +1,10 @@
 <template>
   <div id="contact">
     <h1 class="header">Contact</h1>
-    <!-- <div class="recommendations">
-    </div>-->
     <div class="grid">
       <div class="information">
         <div class="my-email">
-          <font-awesome-icon :icon="['far', 'envelope-open']" size="1x" class="information-fai"/>
+          <font-awesome-icon :icon="['far', 'envelope-open']" size="1x" class="information-fai" />
           <p class="dropaline">Drop a line</p>
           <a
             href="mailto:akinhwan@gmail.com?subject=Your #1 Fan&body=Oh my gosh I can't believe I finally got a hold of you"
@@ -26,137 +24,63 @@
         </div>
       </div>
 
-      <div class="faq">
-        <p>Q:What's your greatest strength/weakness?</p>
-        <!-- <p>A:Blue</p> -->
-        <p>Q:Where do you see yourself in ten years?</p>
-        <!-- <p>A:Blue</p> -->
-        <p>Q:How have you overcome a challenge?</p>
-        <!-- <p>A:Blue</p> -->
-        <p>Q:What are your hobbies?</p>
-        <!-- <p>A:Blue</p> -->
-      </div>
-
-      <!-- <div class="credits">
-        <p>This site was built by me
-          <font-awesome-icon
-            :icon="['fas', 'hand-holding-heart']"
-            color="white"
-            size="1x"
-            class="fas"
-          /> With an assist from ...
-        </p>
-
-        <ul class="credits-list">
-          <li>
-            <a
-              href="https://en.wikipedia.org/wiki/Product_Sans"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Product Sans</a>
-          </li>
-          <li>
-            <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>
-            <font-awesome-icon
-              :icon="['fab', 'vuejs']"
-              color="white"
-              size="1x"
-              class="credits-fai"
-            />
-          </li>
-          <li>
-            <a
-              href="https://fontawesome.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Fort Awesome</a>
-            <font-awesome-icon
-              :icon="['fab', 'fort-awesome']"
-              color="white"
-              size="1x"
-              class="credits-fai"
-            />
-          </li>
-          <li>
-            <a
-              href="https://alvarotrigo.com/fullPage/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Fullpage.js</a>
-          </li>
-          <li>
-            <a
-              href="https://cngu.github.io/vue-typer/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >vueTyper</a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/mciastek/sal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Sal.js</a>
-          </li>
-        </ul>
-      </div> -->
-
       <div class="footer">
         <a href="https://github.com/akinhwan" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'github']" size="4x" class="fai"/>
+          <font-awesome-icon :icon="['fab', 'github']" size="4x" class="fai" />
         </a>
         <a
           href="https://stackoverflow.com/users/6286223/akin-hwan?tab=profile"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <font-awesome-icon :icon="['fab', 'stack-overflow']" size="4x" class="fai"/>
+          <font-awesome-icon :icon="['fab', 'stack-overflow']" size="4x" class="fai" />
         </a>
         <a href="https://medium.com/@akinhwan" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'medium-m']" size="4x" class="fai"/>
+          <font-awesome-icon :icon="['fab', 'medium-m']" size="4x" class="fai" />
         </a>
         <a href="https://twitter.com/akinhwan" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'twitter']" size="4x" class="fai"/>
+          <font-awesome-icon :icon="['fab', 'twitter']" size="4x" class="fai" />
         </a>
         <a href="https://www.linkedin.com/in/akinhwan/" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'linkedin-in']" size="4x" class="fai"/>
+          <font-awesome-icon :icon="['fab', 'linkedin-in']" size="4x" class="fai" />
         </a>
-        <a href="https://soundcloud.com/akinhwan" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'soundcloud']" size="4x" class="fai"/>
+        <a
+          href="https://www.patreon.com/bePatron?u=2405263"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <font-awesome-icon :icon="['fab', 'patreon']" size="4x" class="fai" />
         </a>
         <a
           href="https://www.youtube.com/channel/UCduQGCaFUTOq1LMOP9zOUNA"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <font-awesome-icon :icon="['fab', 'youtube']" size="4x" class="fai"/>
+          <font-awesome-icon :icon="['fab', 'youtube']" size="4x" class="fai" />
         </a>
         <a href="https://codepen.io/akinhwan/" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'codepen']" size="4x" class="fai"/>
+          <font-awesome-icon :icon="['fab', 'codepen']" size="4x" class="fai" />
         </a>
       </div>
 
       <div class="subscription">
         <h2>Sign up for updates. No spam included.</h2>
-        <!-- <form @submit.prevent="onSubmit" action="">
-                <input ref="emailInput" type="email" name="email" placeholder="heyHEYhey@email.com" required @keyup.enter.native="onSubmit">
-                <button>submit</button>
-        </form>-->
         <div class="form-right">
-          <!-- <form style="padding:3px;text-align:center;" action="https://tinyletter.com/akinhwan" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/akinhwan', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-                <p><input type="email" placeholder="heyHEYhey@gmail.com" name="email" id="tlemail" required  /></p>
-                <input type="hidden" value="1" name="embed"/>
-                <input type="submit" id="tlbutton" value="Subscribe" />
-          </form> -->
           <form action="https://getform.io/f/9d0bba9d-b70b-41e8-a83a-b2d97b8fcc63" method="POST">
-            <input type="email" placeholder="heyHEYhey@gmail.com" name="email" id="tlemail" required>
-            <button type="submit" id="tlbutton" value="Subscribe">Send</button> 
+            <input
+              type="email"
+              placeholder="heyHEYhey@gmail.com"
+              name="email"
+              id="tlemail"
+              required
+            />
+            <button type="submit" id="tlbutton" value="Subscribe">Send</button>
           </form>
         </div>
       </div>
     </div>
     <div class="copyright">
-      <font-awesome-icon :icon="['far', 'copyright']" size="1x" class="fai"/>
+      <font-awesome-icon :icon="['far', 'copyright']" size="1x" class="fai" />
       <p class="copyright-text">2019 Akinhwan. All rights reserved.</p>
     </div>
   </div>
@@ -254,29 +178,6 @@ export default {
   font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-/* .credits {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2vw 0;
-  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-.credits-list {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
-} */
-
-/* .credits-list > li > a {
-  color: white;
-  font-size: calc(10px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
-}
-.credits-fai {
-  padding-left: 5px;
-} */
-
 .copyright {
   display: flex;
   align-items: center;
@@ -290,7 +191,6 @@ export default {
   color: white;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
-  /* grid-template-rows: repeat(auto-fill, minmax(80px, 1fr)); */
 }
 
 h2 {
@@ -364,9 +264,6 @@ fai:focus {
 
 .footer {
   font-size: 12px;
-  /* display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8vw, 1fr));
   position: relative;

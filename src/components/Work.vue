@@ -1,117 +1,46 @@
 <template>
   <div id="work">
     <div class="work">
-        <h1 class="header">Work</h1>
+      <h1 class="header">Work</h1>
 
-        <div class="pubmed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2qdmSQ9" target="_blank" rel="noopener noreferrer">PubMed</a>
-          <p class="caption">Search Engine for Biomedical Literature</p>
-          <div class="year-made">'18</div>
-        </div>
+      <div class="pubmed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2qdmSQ9" target="_blank" rel="noopener noreferrer">PubMed</a>
+        <p class="caption">Search Engine for Biomedical Literature</p>
+        <div class="year-made">'18</div>
+      </div>
 
-        <div class="pitchgen card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2RQIJda" target="_blank" rel="noopener noreferrer">PitchGen</a>
-          <p class="caption">Neural Network text generation of Startup Ideas</p>
-          <div class="year-made">'19</div>
-        </div>
+      <div class="pitchgen card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2RQIJda" target="_blank" rel="noopener noreferrer">PitchGen</a>
+        <p class="caption">Neural Network text generation of Startup Ideas</p>
+        <div class="year-made">'19</div>
+      </div>
 
-        <!-- <div class="odpcec card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2qfy12Q" target="_blank" rel="noopener noreferrer">ODPC</a>
-          <p class="caption">Open Door Presbyterian English Congregation</p>
-          <div class="year-made">'18</div>
-        </div> -->
-        
-        <!-- <div class="kas card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2RhS10j" target="_blank" rel="noopener noreferrer">KAS</a>
-          <p class="caption">Korean American Story Organization</p>
-          <div class="year-made">'18</div>
-        </div> -->
-        
-        <!-- <div class="spaces card">
-          <a href="http://bit.ly/2H4NYE8" target="_blank" rel="noopener noreferrer">Spaces</a>
-          <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying1 = !trying1" target="_blank" rel="noopener noreferrer">Spaces</a>
-          <input autofocus v-show="trying1" type="text" id="workpass1" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2H4NYE8', 1);">
-          <p class="caption">a meeting room booking application</p>
-          <div class="year-made">'18</div>
-        </div> -->
+      <div class="rides card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">Rides</a>
+        <div class="year-made">'17</div>
+      </div>
 
-        <!-- <div class="slack card"> -->
-          <!-- <a href="http://bit.ly/2HzxsZv" target="_blank" rel="noopener noreferrer">Slack</a> -->
-          <!-- <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying2 = !trying2" target="_blank" rel="noopener noreferrer">Slack</a>
-          <input autofocus v-show="trying2" type="text" id="workpass2" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2HzxsZv', 2);">
-          <p class="caption">real-time messaging for workplace collaboration internal communication, adapted for signage </p> -->
-          <!-- <div class="year-made">'17</div> -->
-        <!-- </div> -->
-
-        <div class="rides card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">Rides</a>
-          <!-- <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying3 = !trying3" target="_blank" rel="noopener noreferrer">Rides</a>
-          <input autofocus v-show="trying3" type="text" id="workpass3" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2HBd8XU', 3);">
-          <p class="caption">tabular display of ETA, pricing, and vehicle types</p> -->
-          <div class="year-made">'17</div>
-        </div>
-
-        <!-- <div class="telliscope card">
-          <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying4 =! trying4" target="_blank" rel="noopener noreferrer">Telliscope</a>
-          <input autofocus v-show="trying4" type="text" id="workpass4" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2JJxi2B', 4);">
-          <p class="caption">UX freelance contracts with Telliscope LLC</p>
-          <div class="year-made">'16</div>
-        </div> -->
-        <div class="graphicdesign card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2IW4Ysq" target="_blank" rel="noopener noreferrer">Design</a>
-          <!-- <p class="caption">Typefaces, patterns, logos made between 11'-14'</p> -->
-          <div class="year-made">'11-'12</div>
-        </div>
-        <div class="threed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2HBdeyK" target="_blank" rel="noopener noreferrer">3D</a>
-          <!-- <p class="caption">3D Printed Chess pieces, Processing Sketches, and Data Viz</p> -->
-          <div class="year-made">'16</div>
-        </div>
-        <div class="processing card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2HrWXyu" target="_blank" rel="noopener noreferrer">Processing</a>
-          <!-- <p class="caption"></p> -->
-          <div class="year-made">'14-'15</div>
-        </div>
-        <div class="loginpage card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2JM0hTq" target="_blank" rel="noopener noreferrer">Xhibit</a>
-          <!-- <p class="caption"></p> -->
-          <div class="year-made">'17</div>
-        </div>
-        <div class="transit card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-          <a href="http://bit.ly/2vh6pjf" target="_blank" rel="noopener noreferrer">Transit</a>
-          <!-- <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying5=!trying5" target="_blank" rel="noopener noreferrer">Transit</a>
-          <input v-show="trying5" type="text" id="workpass5" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2vh6pjf', 5);" autofocus> -->
-          <!-- <p class="caption"></p> -->
-          <div class="year-made">'18</div>
-        </div>
-        <!-- <div class="directory card">
-          <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying6=!trying6" target="_blank" rel="noopener noreferrer">Directory</a>
-          <input autofocus v-show="trying6" type="text" id="workpass6" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2H2iLkS', 6);">
-          <p class="caption"></p>
-          <div class="year-made">'17</div>
-        </div> -->
-        <!-- <div class="inout card">
-          <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying7=!trying7" target="_blank" rel="noopener noreferrer">In&amp;Out</a>
-          <input autofocus v-show="trying7" type="text" id="workpass7" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2HAyc0A', 7);">
-          <p class="caption"></p>
-          <div class="year-made">'17</div>
-        </div> -->
-        <!-- <div class="queue card">
-          <font-awesome-icon :icon="['fas', 'lock']" size="1x" class="fas" />
-          <a @click="trying8=!trying8" target="_blank" rel="noopener noreferrer">Queue</a>
-          <input autofocus v-show="trying8" type="text" id="workpass8" placeholder="Enter Password" @keyup.enter.prevent="validatePass('http://bit.ly/2EOJr2v', 8);">
-          <p class="caption"></p>
-          <div class="year-made">'18</div>
-        </div> -->
-        
-    </div> 
+      <div class="graphicdesign card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2IW4Ysq" target="_blank" rel="noopener noreferrer">Design</a>
+        <div class="year-made">'11-'12</div>
+      </div>
+      <div class="threed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2HBdeyK" target="_blank" rel="noopener noreferrer">3D</a>
+        <div class="year-made">'16</div>
+      </div>
+      <div class="processing card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2HrWXyu" target="_blank" rel="noopener noreferrer">Processing</a>
+        <div class="year-made">'14-'15</div>
+      </div>
+      <div class="loginpage card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2JM0hTq" target="_blank" rel="noopener noreferrer">Xhibit</a>
+        <div class="year-made">'17</div>
+      </div>
+      <div class="transit card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2vh6pjf" target="_blank" rel="noopener noreferrer">Transit</a>
+        <div class="year-made">'18</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -182,11 +111,9 @@ export default {
 }
 .fas {
   color: white;
-  /* visibility: hidden; */
   display: none;
 }
 .year-made {
-  /* visibility: hidden; */
   display: none;
 }
 
@@ -198,30 +125,13 @@ export default {
   flex-direction: column;
 }
 
-#workpass1,
-#workpass2,
-#workpass3,
-#workpass4,
-#workpass5,
-#workpass6,
-#workpass7,
-#workpass8 {
-  height: 2vw;
-  width: 10vw;
-  font-family: Product Sans;
-  margin: auto;
-  font-size: 1.5vw;
-  /* display: none; */
-}
 .card:hover {
-  /* opacity: 0.5; */
   transform: scale(1.1);
 }
 
 a {
   text-decoration: none;
   font-family: Product Sans;
-  /* font-weight: bolder; */
   font-size: 5vmin;
   color: white;
   padding: 10px;
@@ -231,7 +141,6 @@ a {
 
 .caption {
   color: white;
-  /* visibility: hidden; */
   display: none;
 }
 ::-webkit-scrollbar-track {
@@ -256,12 +165,9 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(168px, 1fr));
-  /* grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr); */
   padding: 5vmin;
   grid-gap: 5vmin;
   border-radius: 15px;
-  /* overflow: overlay; Behaves the same as auto, but with the scrollbars drawn on top of content instead of taking up space. Only supported in WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome or Opera) browsers.*/
   overflow: hidden;
 }
 
@@ -280,24 +186,9 @@ a {
   transform-style: preserve-3d;
 }
 
-/* .slack {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/img/slack_screenshot.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
 .rides {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("/static/img/rideshare_screenshot.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.spaces {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/img/spaces_screenshot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -318,31 +209,9 @@ a {
   background-repeat: no-repeat;
 }
 
-.card > a{
-  transform: translateZ(20px)
+.card > a {
+  transform: translateZ(20px);
 }
-.kas {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
-    url("/static/img/kas.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.odpcec {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
-    url("/static/img/odpcec.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* .telliscope {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/img/landing.png");
-  background-size: 630px; 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 .graphicdesign {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("/static/img/pattern.gif");
@@ -367,13 +236,6 @@ a {
 .processing > a {
   font-size: 4vmin;
 }
-/* .queue {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/img/queue.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 .transit {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("/static/img/transit.png");
@@ -381,20 +243,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* .directory {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/img/directory.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-/* .inout {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/static/img/inout.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 .loginpage {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("/static/img/loginpage.png");

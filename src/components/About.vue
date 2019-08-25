@@ -1,41 +1,97 @@
 <template>
   <div id="about">
-       
     <div class="about">
-        <h1 class="header">About</h1>
-        <p class="col-one">
-          I was born in 1991, an only child in Annandale Virginia. I grew up with an obsession with LEGO and claimed I'd 
-          become a concert violinist. In middle school I thought I'd end up in the NBA or the PGA. In high school I discovered 
-          The Beatles and knew our band "Kung Food" was going to make it 😜. At New York University I began as an Economic Policy 
-          major, but transferred midway to <a href="http://tisch.nyu.edu/" target="_blank" rel="noopener noreferrer">Tisch School 
-          of the Arts</a> for Film and Television. I'm currently a government contractor Front End Developer at 
-          <a href="https://www.mscweb.com/#science-technology-1" target="_blank" rel="noopener noreferrer">MSC</a> working on <a href="https://www.ncbi.nlm.nih.gov/labs/pubmed/" target="_blank" rel="noopener noreferrer"Pub Med Labs>
-          Pub Med Labs</a> connecting people to the world's leading sources of biomedical information.
-          People are often surprised to find out that I don't subscribe to Netflix 😨, but I am a huge fan of
-          <a href="https://medium.com/@akinhwan/my-favorite-podcasts-4b39a3de637c" target="_blank" rel="noopener noreferrer">Podcasts</a>.
-        </p>
-        <p class="col-two">
-          I'll probably enjoy golf till old age, my handicap is ~11. I love music, here is some hard hitting jazz for your soul <a href="https://youtu.be/CsxtKQW9ggg" target="_blank" rel="noopener noreferrer">A Love Supreme Part 2, Resolution by John Coltrane </a>, <a href="https://www.youtube.com/watch?v=pDga7tJL2UU" target="_blank" rel="noopener noreferrer">I Love Music by Ahmad Jamal</a>, and <a href="https://www.youtube.com/watch?v=U8pZZ5D3dVc" target="_blank" rel="noopener noreferrer">Yusef Lateef's Love Theme from Spartacus</a>. Also... <a href="https://www.youtube.com/watch?v=WKWFr9upIuU&t=882s" target="_blank" rel="noopener noreferrer">Brazilian Samba?</a>. Otherwise I enjoy listening to <a href="https://worldwidefm.net/" target="_blank" rel="noopener noreferrer">Worldwide FM radio</a> while I work. I grew up eating <a href="https://en.wikipedia.org/wiki/Gamja-tang" target="_blank" rel="noopener noreferrer">Gamja-tang</a>, and will drink most anything in smoothie form. 
-          My favorite book is <a href="https://en.wikipedia.org/wiki/Meditations" target="_blank" rel="noopener noreferrer">Meditations</a> by <a href="https://en.wikipedia.org/wiki/Marcus_Aurelius" target="_blank" rel="noopener noreferrer">Marcus Aurelius</a>. A movie I could watch over and over again is <a href="https://www.youtube.com/watch?v=BnFjSHQFVkA" target="_blank" rel="noopener noreferrer">In the Mood for Love</a> by <a href="https://en.wikipedia.org/wiki/Wong_Kar-wai_filmography" target="_blank" rel="noopener noreferrer">Wong Kar-wai</a>. 
-          My <a href="https://www.effectivealtruism.org/" target="_blank" rel="noopener noreferrer">mission</a> in life is to make the biggest impact on the most amount of people on this planet 🌎 
-        </p>
-        <!-- <p class="col-one">Digital Design present-day is consumed on-screen and can often be clinical and un-serendipitous, leaving a person passive and disengaged.
-        My goal is to shine light on the tiniest of details that attribute to both the look and feel of an experience online, mobile, or wherever content may live in the future. I believe in a Designer's moral obligation to Alleviate, rather than to Exploit. I believe that if everything had the touch of optimal design, then everyone would operate a little smoother. My guiding sense of purpose is an Eclecticism, that serves as a basis for wide inspiration and deep learning.
-        My ideal workplace or situation, involves an opportunity to learn, grow in responsibilities handed down to me, to contribute to something bigger than myself, and eventually be recognized for the change I've brought about.
-        <p class="col-two">I have worked in a wide variety of open and closed environments with diverse teams of wildly ranging sizes.
-        I have experience in film production, journalism, Front End Web-Development, and UX Design.
-        I bring to the table fresh and innovative ideas, and am capable of taking harsh criticism or feedback to sculpt them into fully formed products.
-        I come with the added advantage of having a storytelling frame of mind via synchronous audio visual arrangements.
-        I am always looking to collaborate with like- minded pracitioners of inter-disciplinary work.
-        I am available for design consultation, freelance projects and commissions for new designs and works. 
-        
-        I enjoy chess, ping-pong, basketball, golf, hiking, 
-        Why tell you all this? Because I believe the thread of dreams and aspirations is more telling than any ol' curriculum vitae. 
-        I'm obsessed with learning new things, and seek to be on the bleeding edge of technology and creativity.  
-        </p> -->
-    </div> 
-
-    
+      <h1 class="header">About</h1>
+      <p class="col-one">
+        I was born in 1991, an only child in Annandale Virginia. I grew up with an obsession with LEGO and claimed I'd
+        become a concert violinist. In middle school I thought I'd end up in the NBA or the PGA. In high school I discovered
+        The Beatles and knew our band "Kung Food" was going to make it 😜. At New York University I began as an Economic Policy
+        major, but transferred midway to
+        <a href="http://tisch.nyu.edu/" target="_blank" rel="noopener noreferrer">
+          Tisch School
+          of the Arts
+        </a> for Film and Television. I'm currently a government contractor Front End Developer at
+        <a
+          href="https://www.mscweb.com/#science-technology-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >MSC</a> working on
+        <a
+          href="https://www.ncbi.nlm.nih.gov/labs/pubmed/"
+          target="_blank"
+          rel="noopener noreferrer"
+          Pub
+          Med
+          Labs
+        >Pub Med Labs</a> connecting people to the world's leading sources of biomedical information.
+        People are often surprised to find out that I don't subscribe to Netflix 😨, but I am a huge fan of
+        <a
+          href="https://medium.com/@akinhwan/my-favorite-podcasts-4b39a3de637c"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Podcasts</a>.
+      </p>
+      <p class="col-two">
+        I'll probably enjoy golf till old age, my handicap is ~11. I love music, here is some hard hitting jazz for your soul
+        <a
+          href="https://youtu.be/CsxtKQW9ggg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >A Love Supreme Part 2, Resolution by John Coltrane</a>,
+        <a
+          href="https://www.youtube.com/watch?v=pDga7tJL2UU"
+          target="_blank"
+          rel="noopener noreferrer"
+        >I Love Music by Ahmad Jamal</a>, and
+        <a
+          href="https://www.youtube.com/watch?v=U8pZZ5D3dVc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Yusef Lateef's Love Theme from Spartacus</a>. Also...
+        <a
+          href="https://www.youtube.com/watch?v=WKWFr9upIuU&t=882s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Brazilian Samba?</a>. Otherwise I enjoy listening to
+        <a
+          href="https://worldwidefm.net/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Worldwide FM radio</a> while I work. I grew up eating
+        <a
+          href="https://en.wikipedia.org/wiki/Gamja-tang"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Gamja-tang</a>, and will drink most anything in smoothie form.
+        My favorite book is
+        <a
+          href="https://en.wikipedia.org/wiki/Meditations"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Meditations</a> by
+        <a
+          href="https://en.wikipedia.org/wiki/Marcus_Aurelius"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Marcus Aurelius</a>. A movie I could watch over and over again is
+        <a
+          href="https://www.youtube.com/watch?v=BnFjSHQFVkA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >In the Mood for Love</a> by
+        <a
+          href="https://en.wikipedia.org/wiki/Wong_Kar-wai_filmography"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Wong Kar-wai</a>.
+        My
+        <a
+          href="https://www.effectivealtruism.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >mission</a> in life is to make the biggest impact on the most amount of people on this planet 🌎
+      </p>
+    </div>
   </div>
 </template>
 

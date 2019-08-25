@@ -5,6 +5,7 @@
       <div class="left-col">
         <p class="name">Andrew Kim</p>
 
+        <!-- :text='["Frontend Engineer", "Web Developer", "UX Designer"]' -->
         <vue-typer
           class="jobtitle"
           :text='["Frontend Engineer", "Web Developer", "UX Designer"]'
@@ -22,11 +23,10 @@
             target="_blank"
             rel="noopener noreferrer"
           >View my Resume</a>
-          <font-awesome-icon :icon="['far', 'file-pdf']" size="2x" class="far" color="white"/>
+          <font-awesome-icon :icon="['far', 'file-pdf']" size="2x" class="far" color="white" />
         </div>
       </div>
-      <div class="right-col profile" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-      </div>
+      <div class="right-col profile" v-tilt="{max: 50, speed: 500, perspective: 1000}"></div>
     </div>
   </div>
 </template>
