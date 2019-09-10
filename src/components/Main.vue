@@ -6,17 +6,18 @@
         <p class="name">Andrew Kim</p>
 
         <!-- :text='["Frontend Engineer", "Web Developer", "UX Designer"]' -->
+        <!-- prettier-ignore -->
         <vue-typer
           class="jobtitle"
-          :text='["Frontend Engineer", "Web Developer", "UX Designer"]'
+          :text='["Front-End Dev", "UI/UX Designer"]'
           :repeat="Infinity"
           :erase-delay="70"
-          :pre-erase-delay="1000"
+          :pre-erase-delay="2000"
           erase-style="backspace"
           caret-animation="phase"
         ></vue-typer>
 
-        <div class="resume">
+        <!-- <div class="resume">
           <a
             id="aikresume"
             href="http://bit.ly/2YssENj"
@@ -24,7 +25,17 @@
             rel="noopener noreferrer"
           >View my Resume</a>
           <font-awesome-icon :icon="['far', 'file-pdf']" size="2x" class="far" color="white" />
-        </div>
+        </div> -->
+        <!-- <form action="https://getform.io/f/9d0bba9d-b70b-41e8-a83a-b2d97b8fcc63" method="POST">
+            <input
+              type="email"
+              placeholder="FreeIdeas@inbox.org"
+              name="email"
+              id="tlemail"
+              required
+            />
+            <button type="submit" id="tlbutton" value="Subscribe">Submit</button>
+          </form> -->
       </div>
       <div class="right-col profile" v-tilt="{max: 50, speed: 500, perspective: 1000}"></div>
     </div>
@@ -215,6 +226,32 @@ canvas {
     left: 0px;
     transform: unset;
   }
+}
+
+#tlemail {
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  -webkit-appearance: none;
+  color: #fff;
+  font-size: 1.3vw;
+  font-family: "Space Mono", monospace;
+  padding-top: 7px;
+  width: 15vw;
+}
+
+#tlemail::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+#tlbutton {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 3px 20px;
+  font-size: 1.3vw;
+  font-family: "Space Mono", monospace;
 }
 
 /* .scroll-down {

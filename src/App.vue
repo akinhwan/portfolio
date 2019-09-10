@@ -5,7 +5,7 @@
     <!-- <router-view /> -->
       <Main class="section" data-sal="fade"/>
       <Work class="section" data-sal="fade"/>
-      <About class="section" data-sal="fade"/>
+      <!-- <About class="section" data-sal="fade"/> -->
       <Contact class="section" data-sal="fade"/>
     </full-page>
   </div>
@@ -28,9 +28,9 @@ export default {
       options: {
         navigation: true,
         navigationPosition: "right",
-        navigationTooltips: ["main", "work", "about", "contact"],
+        navigationTooltips: ["main", "work", "contact"],
         showActiveTooltip: true,
-        anchors: ["1", "2", "3", "4"]
+        anchors: ["1", "2", "3"]
         // normalScrollElements: "#work"
       }
     };

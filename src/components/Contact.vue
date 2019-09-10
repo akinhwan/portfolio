@@ -64,12 +64,12 @@
       </div>
 
       <div class="subscription">
-        <h2>Sign up for updates. No spam included.</h2>
+        <h2>Shake the free Idea Magic 8-ball</h2>
         <div class="form-right">
           <form action="https://getform.io/f/9d0bba9d-b70b-41e8-a83a-b2d97b8fcc63" method="POST">
             <input
               type="email"
-              placeholder="heyHEYhey@gmail.com"
+              placeholder="RayTomlinson@arpa.net"
               name="email"
               id="tlemail"
               required
