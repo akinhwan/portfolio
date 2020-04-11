@@ -16,6 +16,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.10",
     "@fortawesome/vue-fontawesome": "0.0.22",
     "animate.css": "^3.6.1",
+    "buttercms": "^1.2.1",
     "fullpage.js": "^2.9.7",
     "sal.js": "^0.5.0",
     "tilt.js": "^1.2.1",
