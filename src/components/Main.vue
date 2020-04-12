@@ -9,23 +9,44 @@
         <!-- prettier-ignore -->
         <vue-typer
           class="jobtitle"
-          :text='["Front-End Dev", "UI/UX Designer"]'
+          :text='["Front-End Dev"]'
           :repeat="Infinity"
-          :erase-delay="70"
+          :erase-delay="0"
           :pre-erase-delay="2000"
           erase-style="backspace"
           caret-animation="phase"
         ></vue-typer>
+        <!-- "UI/UX Designer" -->
+        <!-- <p class="jobtitle">Frontend Engineer</p> -->
 
-        <!-- <div class="resume">
+        <!-- <button id="show-modal" @click="showModal = true">Show Modal</button>
+        <Modal v-if="showModal" @close="showModal = false">
+          <h3 slot="header">I'll send it right over!</h3>
+          
+          <div slot="body">
+
+          </div>
+        </Modal> -->
+
+        <button class="resume">
+          <!-- href="http://bit.ly/2YssENj" target="_blank" rel="noopener noreferrer" -->
+          <font-awesome-icon
+            :icon="['far', 'file-pdf']"
+            size="2x"
+            class="far"
+            color="white"
+          />
           <a
-            id="aikresume"
             href="http://bit.ly/2YssENj"
             target="_blank"
             rel="noopener noreferrer"
-          >View my Resume</a>
-          <font-awesome-icon :icon="['far', 'file-pdf']" size="2x" class="far" color="white" />
-        </div> -->
+            id="aikresume"
+            >View my Resume
+          </a>
+        </button>
+
+        <!-- https://script.google.com/macros/s/AKfycbx09n_0mSzsN4ALj8x4XaZuPZBXbGu59j9SXhwZFpKYdggLBMwR/exec -->
+
         <!-- <form action="https://getform.io/f/9d0bba9d-b70b-41e8-a83a-b2d97b8fcc63" method="POST">
             <input
               type="email"
@@ -37,7 +58,10 @@
             <button type="submit" id="tlbutton" value="Subscribe">Submit</button>
           </form> -->
       </div>
-      <div class="right-col profile" v-tilt="{max: 50, speed: 500, perspective: 1000}"></div>
+      <div
+        class="right-col profile"
+        v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
+      ></div>
     </div>
   </div>
 </template>
@@ -46,35 +70,46 @@
 import { page } from "vue-analytics";
 import { VueTyper } from "vue-typer";
 import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
+import Modal from "./Modal";
 
 export default {
   name: "main",
   data() {
     return {
-      msg: "Main Front First Business Card"
+      msg: "Main Front First Business Card",
+      showModal: false,
     };
   },
   components: {
     VueTyper,
-    FontAwesomeIcon
+    FontAwesomeIcon,
+    Modal,
   },
   methods: {
     track() {
       page("/");
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style >
+<style>
 .far {
   padding-left: 10px;
 }
 .resume {
   display: flex;
-  align-items: flex-end;
-
+  align-items: center;
+  /* align-items: flex-end; */
+  /* border: 1px solid white; */
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 15px;
+  /* box-shadow: 1px 1px 10px white, 2px 2px 0px white; */
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5), 0 0px 20px rgba(0, 0, 0, 0.5);
+  background-color: black;
   transition: 0.5s;
+  border: none;
 }
 
 .resume:hover {
@@ -85,6 +120,7 @@ export default {
   color: white;
   font-family: Product Sans, "Space Mono", monospace;
   font-size: calc(14px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
+  padding-left: 1rem;
 }
 
 .vue-typer {
@@ -135,6 +171,7 @@ export default {
 }
 
 .name {
+  letter-spacing: 1.25rem;
   position: relative;
   margin: 0;
   color: white;
@@ -151,7 +188,7 @@ export default {
 
 .jobtitle {
   color: white;
-  font-size: calc(26px + (35 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(24px + (35 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .tagline {
@@ -242,8 +279,8 @@ canvas {
 }
 
 #tlemail::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-  }
+  color: rgba(255, 255, 255, 0.5);
+}
 
 #tlbutton {
   background: transparent;

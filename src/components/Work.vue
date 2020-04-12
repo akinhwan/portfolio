@@ -3,43 +3,96 @@
     <div class="work">
       <h1 class="header">Work</h1>
 
-      <div class="pubmed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2qdmSQ9" target="_blank" rel="noopener noreferrer">PubMed</a>
+      <div
+        class="pubmed card"
+        v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
+      >
+        <a
+          href="http://bit.ly/2qdmSQ9"
+          target="_blank"
+          rel="noopener noreferrer"
+          >PubMed</a
+        >
         <p class="caption">Search Engine for Biomedical Literature</p>
         <div class="year-made">'18</div>
       </div>
 
-      <div class="pitchgen card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2RQIJda" target="_blank" rel="noopener noreferrer">PitchGen</a>
+      <div
+        class="pitchgen card"
+        v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
+      >
+        <a
+          href="http://bit.ly/2RQIJda"
+          target="_blank"
+          rel="noopener noreferrer"
+          >PitchGen</a
+        >
         <p class="caption">Neural Network text generation of Startup Ideas</p>
         <div class="year-made">'19</div>
       </div>
 
-      <div class="rides card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">Rides</a>
-        <div class="year-made">'17</div>
+      <div class="posterday card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">PosterDay</a>
+        <div class="year-made">'20</div>
       </div>
 
-      <div class="graphicdesign card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2IW4Ysq" target="_blank" rel="noopener noreferrer">Design</a>
+      <!-- <div class="rides card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">Rides</a>
+        <div class="year-made">'17</div>
+      </div> -->
+
+      <div
+        class="graphicdesign card"
+        v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
+      >
+        <a
+          href="http://bit.ly/2IW4Ysq"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Design</a
+        >
         <div class="year-made">'11-'12</div>
       </div>
-      <div class="threed card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2HBdeyK" target="_blank" rel="noopener noreferrer">3D</a>
+      <div
+        class="threed card"
+        v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
+      >
+        <a
+          href="http://bit.ly/2HBdeyK"
+          target="_blank"
+          rel="noopener noreferrer"
+          >3D</a
+        >
         <div class="year-made">'16</div>
       </div>
-      <div class="processing card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2HrWXyu" target="_blank" rel="noopener noreferrer">Processing</a>
+      <div
+        class="processing card"
+        v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
+      >
+        <a
+          href="http://bit.ly/2HrWXyu"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Processing</a
+        >
         <div class="year-made">'14-'15</div>
       </div>
-      <div class="loginpage card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2JM0hTq" target="_blank" rel="noopener noreferrer">Xhibit</a>
+      <div
+        class="loginpage card"
+        v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
+      >
+        <a
+          href="http://bit.ly/2JM0hTq"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Xhibit</a
+        >
         <div class="year-made">'17</div>
       </div>
-      <div class="transit card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+      <!-- <div class="transit card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
         <a href="http://bit.ly/2vh6pjf" target="_blank" rel="noopener noreferrer">Transit</a>
-        <div class="year-made">'18</div>
-      </div>
+        <div class="year-made">'18</div> -->
+      </div> 
     </div>
   </div>
 </template>
@@ -59,11 +112,11 @@ export default {
       trying5: false,
       trying6: false,
       trying7: false,
-      trying8: false
+      trying8: false,
     };
   },
   components: {
-    FontAwesomeIcon
+    FontAwesomeIcon,
   },
   methods: {
     validatePass(link, n) {
@@ -86,8 +139,8 @@ export default {
     },
     openWindow(link) {
       window.open(link);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -196,6 +249,14 @@ a {
 .pubmed {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
     url("/static/img/pubmed.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.posterday {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
+    url("/static/img/posterday.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
