@@ -19,44 +19,38 @@
         <!-- "UI/UX Designer" -->
         <!-- <p class="jobtitle">Frontend Engineer</p> -->
 
-        <!-- <button id="show-modal" @click="showModal = true">Show Modal</button>
         <Modal v-if="showModal" @close="showModal = false">
-          <h3 slot="header">I'll send it right over!</h3>
-          
+          <h1 slot="header" style="color: white;">I'll send it right over!</h1>
+
           <div slot="body">
-
+            <form
+              @submit.prevent="onSubmitGoogleSheets"
+              name="submit-to-google-sheet"
+            >
+              <input
+                name="email"
+                placeholder="RayTomlinson@arpa.net"
+                id="tlemail"
+                type="email"
+                required
+              />
+              <button id="tlbutton" value="Subscribe" type="submit">
+                Send
+              </button>
+            </form>
           </div>
-        </Modal> -->
+        </Modal>
 
-        <button class="resume">
+        <button id="aikresume" @click="showModal = true" class="resume">
           <!-- href="http://bit.ly/2YssENj" target="_blank" rel="noopener noreferrer" -->
           <font-awesome-icon
             :icon="['far', 'file-pdf']"
-            size="2x"
+            size="1x"
             class="far"
             color="white"
           />
-          <a
-            href="http://bit.ly/2YssENj"
-            target="_blank"
-            rel="noopener noreferrer"
-            id="aikresume"
-            >View my Resume
-          </a>
+          View my Resume
         </button>
-
-        <!-- https://script.google.com/macros/s/AKfycbx09n_0mSzsN4ALj8x4XaZuPZBXbGu59j9SXhwZFpKYdggLBMwR/exec -->
-
-        <!-- <form action="https://getform.io/f/9d0bba9d-b70b-41e8-a83a-b2d97b8fcc63" method="POST">
-            <input
-              type="email"
-              placeholder="FreeIdeas@inbox.org"
-              name="email"
-              id="tlemail"
-              required
-            />
-            <button type="submit" id="tlbutton" value="Subscribe">Submit</button>
-          </form> -->
       </div>
       <div
         class="right-col profile"
@@ -89,23 +83,31 @@ export default {
     track() {
       page("/");
     },
+    onSubmitGoogleSheets() {
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx09n_0mSzsN4ALj8x4XaZuPZBXbGu59j9SXhwZFpKYdggLBMwR/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => console.log("Success!", response))
+        .catch((error) => console.error("Error!", error.message));
+
+      this.showModal = false;
+    },
   },
 };
 </script>
 
 <style>
 .far {
-  padding-left: 10px;
+  padding: 0 10px;
 }
 .resume {
   display: flex;
   align-items: center;
-  /* align-items: flex-end; */
-  /* border: 1px solid white; */
   padding: 1rem;
   width: fit-content;
   border-radius: 15px;
-  /* box-shadow: 1px 1px 10px white, 2px 2px 0px white; */
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5), 0 0px 20px rgba(0, 0, 0, 0.5);
   background-color: black;
   transition: 0.5s;
@@ -117,6 +119,8 @@ export default {
   transition: 0.5s;
 }
 #aikresume {
+  background-color: black;
+  border: none;
   color: white;
   font-family: Product Sans, "Space Mono", monospace;
   font-size: calc(14px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
@@ -164,10 +168,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-
-.right-col {
-  /* grid-column: 2/3; */
 }
 
 .name {
@@ -290,31 +290,4 @@ canvas {
   font-size: 1.3vw;
   font-family: "Space Mono", monospace;
 }
-
-/* .scroll-down {
-  position: absolute;
-  bottom: 160px;
-  font-size: 20px;
-  width: 30px;
-  height: 30px;
-  border-bottom: 12px solid #fff;
-  border-right: 12px solid #fff;
-  border-radius: 5px;
-  left: 50%;
-  transform: translate(-50%, 0%) rotate(45deg);
-  animation: fade_move_down 4s ease-in-out infinite;
-}
-@keyframes fade_move_down {
-  0% {
-    transform: translate(0, -10px) rotate(45deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, 10px) rotate(45deg);
-    opacity: 0;
-  }
-} */
 </style>

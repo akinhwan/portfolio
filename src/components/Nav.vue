@@ -3,7 +3,7 @@
     <div class="nav">
       <p>Main</p>
       <p>Work</p>
-      <p>About</p>
+      <!-- <p>About</p> -->
       <p>Contact</p>
     </div>
   </div>
@@ -14,9 +14,9 @@ export default {
   name: "NavSection",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: "Welcome to Your Vue.js App",
     };
-  }
+  },
 };
 </script>
 

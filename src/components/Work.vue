@@ -32,7 +32,7 @@
       </div>
 
       <div class="posterday card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
-        <a href="http://bit.ly/2HBd8XU" target="_blank" rel="noopener noreferrer">PosterDay</a>
+        <a href="https://bit.ly/2wF0Mgg" target="_blank" rel="noopener noreferrer">PosterDay</a>
         <div class="year-made">'20</div>
       </div>
 

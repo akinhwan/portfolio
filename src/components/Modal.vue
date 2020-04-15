@@ -15,14 +15,16 @@
             </slot>
           </div>
 
-          <div class="modal-footer">
+          <!-- try doing modal where theres glow effect on dialog box white to not make it as stark? -->
+
+          <!-- <div class="modal-footer">
             <slot name="footer">
               default footer
               <button class="modal-default-button" @click="$emit('close')">
                 OK
               </button>
             </slot>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -76,10 +78,10 @@ export default {
 }
 
 .modal-container {
-  width: 300px;
+  width: 30%;
   margin: 0px auto;
   padding: 20px 30px;
-  background-color: #fff;
+  background-color: black;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;

@@ -4,11 +4,16 @@
     <div class="grid">
       <div class="information">
         <div class="my-email">
-          <font-awesome-icon :icon="['far', 'envelope-open']" size="1x" class="information-fai" />
+          <font-awesome-icon
+            :icon="['far', 'envelope-open']"
+            size="1x"
+            class="information-fai"
+          />
           <p class="dropaline">Drop a line</p>
           <a
             href="mailto:akinhwan@gmail.com?subject=Your #1 Fan&body=Oh my gosh I can't believe I finally got a hold of you"
-          >akinhwan@gmail.com</a>
+            >akinhwan@gmail.com</a
+          >
         </div>
         <div class="my-phone">
           <font-awesome-icon
@@ -19,69 +24,106 @@
           />
           <p>
             <span class="sayhello">Say Hello</span>
-            <a class="phonenumber" href="tel:+1-202-507-9205">+1 (202) 507-9205</a>
+            <a class="phonenumber" href="tel:+1-202-507-9205"
+              >+1 (202) 507-9205</a
+            >
           </p>
         </div>
       </div>
 
       <div class="footer">
-        <a href="https://github.com/akinhwan" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/akinhwan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <font-awesome-icon :icon="['fab', 'github']" size="4x" class="fai" />
         </a>
-        <a
+        <!-- <a
           href="https://stackoverflow.com/users/6286223/akin-hwan?tab=profile"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <font-awesome-icon :icon="['fab', 'stack-overflow']" size="4x" class="fai" />
-        </a>
-        <a href="https://medium.com/@akinhwan" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'medium-m']" size="4x" class="fai" />
-        </a>
-        <a href="https://twitter.com/akinhwan" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'twitter']" size="4x" class="fai" />
-        </a>
-        <a href="https://www.linkedin.com/in/akinhwan/" target="_blank" rel="noopener noreferrer">
-          <font-awesome-icon :icon="['fab', 'linkedin-in']" size="4x" class="fai" />
+          <font-awesome-icon
+            :icon="['fab', 'stack-overflow']"
+            size="4x"
+            class="fai"
+          />
+        </a> -->
+        <a
+          href="https://medium.com/@akinhwan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <font-awesome-icon
+            :icon="['fab', 'medium-m']"
+            size="4x"
+            class="fai"
+          />
         </a>
         <a
+          href="https://twitter.com/akinhwan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <font-awesome-icon :icon="['fab', 'twitter']" size="4x" class="fai" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/akinhwan/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <font-awesome-icon
+            :icon="['fab', 'linkedin-in']"
+            size="4x"
+            class="fai"
+          />
+        </a>
+        <!-- <a
           href="https://www.patreon.com/bePatron?u=2405263"
           target="_blank"
           rel="noopener noreferrer"
         >
           <font-awesome-icon :icon="['fab', 'patreon']" size="4x" class="fai" />
-        </a>
-        <a
+        </a> -->
+        <!-- <a
           href="https://www.youtube.com/channel/UCduQGCaFUTOq1LMOP9zOUNA"
           target="_blank"
           rel="noopener noreferrer"
         >
           <font-awesome-icon :icon="['fab', 'youtube']" size="4x" class="fai" />
-        </a>
-        <a href="https://codepen.io/akinhwan/" target="_blank" rel="noopener noreferrer">
+        </a> -->
+        <a
+          href="https://codepen.io/akinhwan/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <font-awesome-icon :icon="['fab', 'codepen']" size="4x" class="fai" />
         </a>
       </div>
 
       <div class="subscription">
-        <h2>Shake the free Idea Magic 8-ball</h2>
+        <h2>Sign up for updates from me!</h2>
         <div class="form-right">
-          <form action="https://getform.io/f/9d0bba9d-b70b-41e8-a83a-b2d97b8fcc63" method="POST">
+          <form
+            @submit.prevent="onSubmitGoogleSheets"
+            name="submit-to-google-sheet"
+          >
             <input
-              type="email"
-              placeholder="RayTomlinson@arpa.net"
               name="email"
+              placeholder="RayTomlinson@arpa.net"
               id="tlemail"
+              type="email"
               required
             />
-            <button type="submit" id="tlbutton" value="Subscribe">Send</button>
+            <button id="tlbutton" value="Subscribe" type="submit">Send</button>
           </form>
         </div>
       </div>
     </div>
     <div class="copyright">
       <font-awesome-icon :icon="['far', 'copyright']" size="1x" class="fai" />
-      <p class="copyright-text">2019 Akinhwan. All rights reserved.</p>
+      <p class="copyright-text">2020 Akinhwan. All rights reserved.</p>
     </div>
   </div>
 </template>
@@ -94,7 +136,7 @@ export default {
   data() {
     return {
       msg: "Contact Contact Contact",
-      email: []
+      email: [],
     };
   },
   methods: {
@@ -102,11 +144,20 @@ export default {
       this.email.push(this.$refs.emailInput.value);
       console.log(e);
       this.$refs.emailInput.value = "";
-    }
+    },
+    onSubmitGoogleSheets() {
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx09n_0mSzsN4ALj8x4XaZuPZBXbGu59j9SXhwZFpKYdggLBMwR/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => console.log("Success!", response))
+        .catch((error) => console.error("Error!", error.message));
+    },
   },
   components: {
-    FontAwesomeIcon
-  }
+    FontAwesomeIcon,
+  },
 };
 </script>
 
@@ -265,9 +316,10 @@ fai:focus {
 .footer {
   font-size: 12px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(8vw, 1fr));
+  grid-template-columns: repeat(5, minmax(8vw, 1fr));
   position: relative;
   padding: 16px 0;
+  margin: 0 13rem;
 }
 .footer > a {
   margin: auto;
