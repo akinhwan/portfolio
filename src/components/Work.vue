@@ -41,6 +41,11 @@
         <div class="year-made">'17</div>
       </div> -->
 
+      <div class="davi card" v-tilt="{max: 50, speed: 500, perspective: 1000}">
+        <a href="http://trydavi.com/" target="_blank" rel="noopener noreferrer">Davi Health</a>
+        <div class="year-made">'19</div>
+      </div>
+
       <div
         class="graphicdesign card"
         v-tilt="{ max: 50, speed: 500, perspective: 1000 }"
@@ -239,13 +244,14 @@ a {
   transform-style: preserve-3d;
 }
 
-.rides {
+.davi {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("/static/img/rideshare_screenshot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .pubmed {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.95)),
     url("/static/img/pubmed.gif");

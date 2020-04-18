@@ -108,9 +108,11 @@
           <form
             @submit.prevent="onSubmitGoogleSheets"
             name="submit-to-google-sheet"
+            ref="submitForm"
           >
             <input
               name="email"
+              ref="emailInput"
               placeholder="RayTomlinson@arpa.net"
               id="tlemail"
               type="email"
@@ -118,6 +120,9 @@
             />
             <button id="tlbutton" value="Subscribe" type="submit">Send</button>
           </form>
+          <h2 ref="thankyou" style="display: none;">
+            ✔️ Thank you for subscribing 🙏
+          </h2>
         </div>
       </div>
     </div>
@@ -134,17 +139,9 @@ import FontAwesomeIcon from "@fortawesome/vue-fontawesome";
 export default {
   name: "ContactSection",
   data() {
-    return {
-      msg: "Contact Contact Contact",
-      email: [],
-    };
+    return {};
   },
   methods: {
-    onSubmit(e) {
-      this.email.push(this.$refs.emailInput.value);
-      console.log(e);
-      this.$refs.emailInput.value = "";
-    },
     onSubmitGoogleSheets() {
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbx09n_0mSzsN4ALj8x4XaZuPZBXbGu59j9SXhwZFpKYdggLBMwR/exec";
@@ -153,6 +150,10 @@ export default {
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => console.log("Success!", response))
         .catch((error) => console.error("Error!", error.message));
+      this.$refs.emailInput.value = "";
+      this.email = "";
+      this.$refs.submitForm.style.display = "none";
+      this.$refs.thankyou.style.display = "flex";
     },
   },
   components: {

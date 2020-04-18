@@ -1,7 +1,7 @@
 <template>
   <transition name="modal">
     <div class="modal-mask">
-      <div class="modal-wrapper">
+      <div class="modal-wrapper" @click="closeModal">
         <div class="modal-container">
           <div class="modal-header">
             <slot name="header">
@@ -14,17 +14,6 @@
               default body
             </slot>
           </div>
-
-          <!-- try doing modal where theres glow effect on dialog box white to not make it as stark? -->
-
-          <!-- <div class="modal-footer">
-            <slot name="footer">
-              default footer
-              <button class="modal-default-button" @click="$emit('close')">
-                OK
-              </button>
-            </slot>
-          </div> -->
         </div>
       </div>
     </div>
@@ -54,7 +43,10 @@ export default {
   beforeDestroy() {},
   destroyed() {},
   methods: {
-    // myMethod() {}
+    closeModal() {
+      console.log("CLOSE");
+      this.showModal = false;
+    },
   },
 };
 </script>
