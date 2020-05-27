@@ -1,11 +1,9 @@
 <template>
   <div id="mainComponent">
     <div class="main">
-      <!-- <div class="scroll-down"></div> -->
       <div class="left-col">
         <p class="name">Andrew Kim</p>
 
-        <!-- :text='["Frontend Engineer", "Web Developer", "UX Designer"]' -->
         <!-- prettier-ignore -->
         <vue-typer
           class="jobtitle"
@@ -16,11 +14,15 @@
           erase-style="backspace"
           caret-animation="phase"
         ></vue-typer>
-        <!-- "UI/UX Designer" -->
-        <!-- <p class="jobtitle">Frontend Engineer</p> -->
 
-        <Modal v-if="showModal" @close="showModal = false">
-          <h1 slot="header" style="color: white;">I'll send it right over!</h1>
+        <Modal
+          v-if="showModal"
+          @close="showModal = false"
+          @keydown.esc="showModal = false"
+        >
+          <h1 slot="header" style="color: white;">
+            Where should I send it to?
+          </h1>
 
           <div slot="body">
             <form
@@ -42,7 +44,6 @@
         </Modal>
 
         <button id="aikresume" @click="showModal = true" class="resume">
-          <!-- href="http://bit.ly/2YssENj" target="_blank" rel="noopener noreferrer" -->
           <font-awesome-icon
             :icon="['far', 'file-pdf']"
             size="1x"

@@ -1,13 +1,36 @@
 <template>
   <div id="app">
     <full-page :options="options" ref="fullpage">
-    <!-- <router-link to="/main2">Main2</router-link> -->
-    <!-- <router-view /> -->
-      <Main class="section" data-sal="fade"/>
-      <Work class="section" data-sal="fade"/>
+      <!-- <router-link to="/main2">Main2</router-link> -->
+      <!-- <router-view /> -->
+      <Main class="section" data-sal="fade" />
+      <Work class="section" data-sal="fade" />
       <!-- <About class="section" data-sal="fade"/> -->
-      <Contact class="section" data-sal="fade"/>
+      <Contact class="section" data-sal="fade" />
     </full-page>
+    <div class="subscription">
+      <h2 class="sub-text">Receive occassional updates from me</h2>
+      <div class="form-right">
+        <form
+          @submit.prevent="onSubmitGoogleSheets"
+          name="submit-to-google-sheet"
+          ref="submitForm"
+        >
+          <input
+            name="email"
+            ref="emailInput"
+            placeholder="RayTomlinson@arpa.net"
+            id="tlemail"
+            type="email"
+            required
+          />
+          <button id="tlbutton" value="Subscribe" type="submit">Send</button>
+        </form>
+        <h2 ref="thankyou" style="display: none;">
+          ✔️ Thank you for subscribing 🙏
+        </h2>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -30,9 +53,9 @@ export default {
         navigationPosition: "right",
         navigationTooltips: ["main", "work", "contact"],
         showActiveTooltip: true,
-        anchors: ["1", "2", "3"]
+        anchors: ["1", "2", "3"],
         // normalScrollElements: "#work"
-      }
+      },
     };
   },
   mounted() {
@@ -44,13 +67,36 @@ export default {
     Main,
     About,
     Work,
-    Contact
-  }
+    Contact,
+  },
 };
 </script>
 
 <style>
 @import "../node_modules/sal.js/dist/sal.css";
+
+.subscription {
+  width: inherit;
+  position: fixed;
+  bottom: 0;
+  font-family: "Space Mono", monospace;
+  background-color: black;
+  min-height: 80px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+}
+.sub-text {
+  margin: auto !important;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.form-right {
+  display: flex !important;
+  align-items: center !important;
+}
 
 #app {
   background-color: rgba(0, 0, 0, 0.3);
@@ -125,7 +171,7 @@ body::-webkit-scrollbar-thumb {
 }
 #fp-nav ul li .fp-tooltip {
   color: white;
-  font-family: Product Sans; 
+  font-family: Product Sans;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {

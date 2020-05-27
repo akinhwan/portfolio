@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 .modal-mask {
+  border-radius: 15px;
   position: fixed;
   z-index: 9998;
   top: 0;

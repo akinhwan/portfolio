@@ -102,33 +102,10 @@
         </a>
       </div>
 
-      <div class="subscription">
-        <h2>Sign up for updates from me!</h2>
-        <div class="form-right">
-          <form
-            @submit.prevent="onSubmitGoogleSheets"
-            name="submit-to-google-sheet"
-            ref="submitForm"
-          >
-            <input
-              name="email"
-              ref="emailInput"
-              placeholder="RayTomlinson@arpa.net"
-              id="tlemail"
-              type="email"
-              required
-            />
-            <button id="tlbutton" value="Subscribe" type="submit">Send</button>
-          </form>
-          <h2 ref="thankyou" style="display: none;">
-            ✔️ Thank you for subscribing 🙏
-          </h2>
-        </div>
+      <div class="copyright">
+        <font-awesome-icon :icon="['far', 'copyright']" size="1x" class="fai" />
+        <p class="copyright-text">2020 Akinhwan. All rights reserved.</p>
       </div>
-    </div>
-    <div class="copyright">
-      <font-awesome-icon :icon="['far', 'copyright']" size="1x" class="fai" />
-      <p class="copyright-text">2020 Akinhwan. All rights reserved.</p>
     </div>
   </div>
 </template>
@@ -236,13 +213,6 @@ export default {
   justify-content: center;
   position: relative;
   bottom: -45px;
-}
-.subscription {
-  background-color: black;
-  min-height: 80px;
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
 }
 
 h2 {
